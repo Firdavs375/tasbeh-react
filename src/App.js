@@ -4,47 +4,36 @@ import "./components/style.css"
 
 function App() {
   const [count, setCound] = useState(0)
-  if(count > 20){
-    setCound (20)
-  }else if(count < 0){
-    setCound (0)
+  if (count > 100) {
+    setCound(100)
   }
   return (
     <>
       <body >
         <center>
-          <h1 style={{
-            fontSize: '100px',
-            color: 'white'
-          }}>{count}</h1>
-          <button style={{
-            background: 'indigo',
-            padding: '20px 35px',
-            borderRadius: '50px',
-            border: '0',
-            marginRight: '20px',
-            color: 'white',
-            fontSize: '25px',
-            textTransform: 'uppercase',
-            fontFamily: 'inherit',
-            boxShadow: '2px 2px 30px -15px white',
-            marginLeft: '30px',
-        }} onClick={() => setCound(count + 1)}>incurument</button>
-        <button style={{
-            background: '#ffcc00',
-            padding: '20px 35px',
-            borderRadius: '50px',
-            border: '0',
-            marginRight: '20px',
-            color: 'white',
-            fontSize: '25px',
-            textTransform: 'uppercase',
-            fontFamily: 'inherit',
-            boxShadow: '2px 2px 30px -15px white'
-        }} onClick={() => setCound(count - 1)}>dencrement</button>
-      </center>
-    </body >
-    {/* <center>
+          <div className="Div1"></div>
+          <div className="Div2"></div>
+          <div className="Div3">
+            <div className="Div4"></div>
+            <div className="Div4_2"></div>
+          </div>
+          <div className="Div5">
+            <div className="Div6"></div>
+            <div className="Div6_6"></div>
+          </div>
+          <div className="Div5_5">
+            <div className="Div6"></div>
+            <div className="Div6_6"></div>
+          </div>
+          <div className="oyna">
+            <h1>{count}</h1>
+          </div>
+          <button className="btn2" onClick={() => setCound(0)}>Restart</button>
+          <div><button className="btn1" onClick={() => setCound(count + 1)}>Incurument</button></div>
+
+        </center>
+      </body >
+      {/* <center>
         <Button name={"Button1"} className={"red"} />
         <br></br>
         <br></br>
